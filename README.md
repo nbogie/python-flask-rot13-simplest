@@ -33,3 +33,9 @@ or
 ```
 python -m unittest
 ```
+
+### To deploy to production
+
+Follow https://render.com/docs/deploy-flask
+
+The app already mentions the production http server, gunicorn, in `requirements.txt` and doesn't hard-code a port environment variable, allowing render and gunicorn to coordinate that.
